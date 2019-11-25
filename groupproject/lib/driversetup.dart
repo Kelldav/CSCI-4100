@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:groupproject/Driver.dart';
 
 class DriverSetup extends StatelessWidget{
 
@@ -38,7 +39,16 @@ class DriverSetup extends StatelessWidget{
 
           ],
         ),
+
       ),
+        floatingActionButton: FloatingActionButton(
+        // Navigate to Add Grade Screen
+        onPressed: () {
+    Navigator.pushReplacement(context,
+    MaterialPageRoute(builder: (context) => Driver()
+    ));
+    },
+        )
     );
 
   }
